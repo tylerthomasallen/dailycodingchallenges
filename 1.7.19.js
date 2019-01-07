@@ -27,3 +27,7 @@ const convertArr = (arr) => {
 const test = [1, 2, 3, 4, 5];
 
 console.log(convertArr(test));
+
+// this solution takes O(n2) time (exponential, double nested for loop) so would not be good scaling
+// definitely a naive solution. Takes O(n) space, just making a copy array the same
+// length as the original array.
