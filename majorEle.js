@@ -22,10 +22,9 @@ const majorEle = (arr) => {
     }
   });
 
-  let filtered = Object.keys(numCount).filter((k, v) => {
-    v >= ((arr.length) / 2);
-  });
-
-  console.log(filtered);
-  console.log(numCount);
+  for (let key in numCount) {
+    if (numCount[key] >= (arr.length / 2)) {
+      return key;
+    }
+  }
 };
